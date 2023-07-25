@@ -4,7 +4,7 @@
     "server_type": "cx31",
     "snapshot_prefix": "rhcos",
     "image_type": "generic",
-    "ignition_config": "config-2.2.0.ign"
+    "ignition_config": "config-3.0.0.ign"
   },
   "builders": [
     {
@@ -37,7 +37,7 @@
         "qemu-img convert rhcos-x86_64-qemu.x86_64.qcow2 -O raw /dev/sda",
         "partprobe /dev/sda",
         "mkdir /target",
-        "mount /dev/sda2 /target",
+        "mount /dev/sda3 /target",
         "mkdir /target/ignition"
       ]
     },
